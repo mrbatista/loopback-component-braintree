@@ -1,0 +1,86 @@
+{
+  "name": "loopback-component-braintree",
+  "version": "0.0.0-development",
+  "description": "The Braintree connector for the LoopBack framework",
+  "homepage": "https://github.com/mrbatista/loopback-component-braintree",
+  "author": {
+    "name": "Matteo Padovano",
+    "email": "mrba7ista@gmail.com",
+    "url": "https://github.com/mrbatista"
+  },
+  "files": [
+    "lib",
+    "!lib/__test__"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "Loopback",
+    "Payment",
+    "Braintree",
+    "PayPal",
+    "Credit Card",
+    "Gateway",
+    "Connector",
+    "Component"
+  ],
+  "devDependencies": {
+    "@semantic-release/git": "^7.0.8",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-xo": "^0.25.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.2.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.0",
+    "loopback-datasource-juggler": "^3.31.0",
+    "prettier": "^1.15.2",
+    "semantic-release": "^15.13.12"
+  },
+  "engines": {
+    "npm": ">= 8.3.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest",
+    "semantic-release": "semantic-release"
+  },
+  "repository": "mrbatista/loopback-component-braintree",
+  "jest": {
+    "testRegex": "(/__tests__/.*.(test|spec))\\.(jsx?|tsx?)$",
+    "testPathIgnorePatterns": [
+      ".history"
+    ],
+    "testEnvironment": "node"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "braintree": "^2.17.0"
+  }
+}

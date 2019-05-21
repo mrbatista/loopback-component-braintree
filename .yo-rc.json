@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Matteo Padovano",
+      "authorEmail": "mrba7ista@gmail.com",
+      "authorUrl": "https://github.com/mrbatista"
+    }
+  }
+}

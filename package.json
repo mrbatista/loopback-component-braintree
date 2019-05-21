@@ -1,6 +1,6 @@
 {
   "name": "loopback-component-braintree",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "The Braintree connector for the LoopBack framework",
   "homepage": "https://github.com/mrbatista/loopback-component-braintree",
   "author": {
